@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Milind Jarsaniya - Portfolio</title>
+  <meta name="description" content="Portfolio of Milind Jarsaniya, Software Engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="dark" id="top">
+
+  <nav class="navbar fade-down">
+    <div class="nav-brand"><a href="#top">Milind Jarsaniya. /&gt;</a></div>
+    <ul class="nav-links">
+      <li><a href="#top" class="active">Top</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Toggle Theme">
+      <!-- Sun Icon -->
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <!-- Moon Icon -->
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+  </nav>
+
+  <div class="side-left fade-down">
+    <span class="scroll-text">SCROLL DOWN</span>
+    <div class="line"></div>
+  </div>
+
+  <div class="side-right fade-down">
+    <div class="social-links">
+      <a href="https://github.com/MilindJarsaniya21" target="_blank" rel="noopener noreferrer">GH</a>
+      <a href="https://linkedin.com/in/milind-jarsaniya" target="_blank" rel="noopener noreferrer">LI</a>
+      <a href="mailto:milindjarsaniya.dev@gmail.com">EM</a>
+    </div>
+    <div class="line"></div>
+  </div>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <div class="hero-content reveal-up">
+        <h1>Hello,<br>My name is Milind.</h1>
+        <p>I am an ambitious Software Developer specializing in backend engineering, APIs, and event-driven architectures. I build scalable, reliable software using Java, Spring Boot, and Node.js.</p>
+        <div class="hero-actions">
+          <a href="./resume.pdf" class="btn primary-link" target="_blank">Get My Resume <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="hero-image reveal-up" style="transition-delay: 0.2s">
+        <div class="image-wrapper">
+          <img src="/home/milindjarsaniya/.gemini/antigravity/brain/39ba09ff-8b0a-4706-9f5c-c2865d14a228/developer_portrait_1776262818416.png" alt="Milind Jarsaniya">
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="section-header reveal-up">
+        <h2>Work Experience</h2>
+        <p>Professional journey and impactful roles.</p>
+      </div>
+      <div class="timeline reveal-up">
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2025 - Present</div>
+          <div class="timeline-content">
+            <h3>Azilen Technologies</h3>
+            <div class="role mt">
+              <h4>Associate Software Developer</h4>
+              <span class="duration">Jul 2025 - Present</span>
+            </div>
+            <ul>
+              <li>Engineered payment processing modules on the ACI Postilion platform (Java 8), handling ISO 8583 message parsing.</li>
+              <li>Reduced debugging turnaround by introducing structured field-level logging.</li>
+              <li>Designed RESTful API endpoints for timesheet tracking & resource allocation (Java, Spring Boot, PostgreSQL).</li>
+            </ul>
+            <div class="role mt">
+              <h4>Associate Software Developer Intern</h4>
+              <span class="duration">Jan 2025 - Jun 2025</span>
+            </div>
+            <ul>
+              <li>Migrated a timesheet system from a frontend-heavy architecture to a Java/Spring Boot microservice.</li>
+              <li>Architected a Change Data Capture (CDC) pipeline across 3 databases using AWS SNS and SQS.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="section-header reveal-up">
+        <h2>Selected Projects</h2>
+        <p>Things I've built to solve complex problems.</p>
+      </div>
+      
+      <div class="projects-grid">
+        <article class="project-card reveal-up">
+          <div class="project-content">
+            <h3>Multi-Library Management System</h3>
+            <p>Built a multi-tenant Library Management System with full CRUD operations for books, issuances, authors, and users across multiple libraries. Designed relational schema in MySQL.</p>
+            <div class="tech-stack">
+              <span>Node.js</span><span>Express.js</span><span>MySQL</span><span>REST API</span>
+            </div>
+            <a href="https://github.com/MilindJarsaniya21" class="btn outline" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </article>
+        
+        <article class="project-card reveal-up" style="transition-delay: 0.2s">
+          <div class="project-content">
+            <h3>Streaming Service Platform</h3>
+            <p>Engineered a Netflix-inspired backend featuring user/admin management, tiered subscription plans, video upload handling, and JWT-based authentication with role-based access control.</p>
+            <div class="tech-stack">
+              <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span>
+            </div>
+            <a href="https://github.com/MilindJarsaniya21" class="btn outline" target="_blank" rel="noopener noreferrer">View Project</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact reveal-up">
+      <h2 class="huge">Contact!</h2>
+      <a href="mailto:milindjarsaniya.dev@gmail.com" class="contact-email">milindjarsaniya.dev@gmail.com <span class="arrow">↗</span></a>
+      
+      <div class="footer-bottom">
+        <div class="footer-socials">
+          <a href="https://github.com/MilindJarsaniya21" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/milind-jarsaniya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="copyright">
+          © <span id="year"></span> Milind Jarsaniya. All rights reserved. Built with precision.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+</body>
+</html>
