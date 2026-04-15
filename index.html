@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Milind Jarsaniya - Portfolio</title>
-  <meta name="description" content="Portfolio of Milind Jarsaniya, Software Engineer." />
+  <meta name="description"
+    content="Portfolio of Milind Jarsaniya, a Backend Software Engineer specializing in Java, Spring Boot, APIs, and scalable architectures." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body class="dark" id="top">
 
   <nav class="navbar fade-down">
-    <div class="nav-brand"><a href="#top">Milind Jarsaniya. /&gt;</a></div>
+    <div class="nav-brand">
+      <a href="#top" class="terminal-brand">&gt; milind<span class="cursor-blink">_</span></a>
+    </div>
     <ul class="nav-links">
       <li><a href="#top" class="active">Top</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button id="theme-toggle" aria-label="Toggle Theme">
       <!-- Sun Icon -->
-      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
       <!-- Moon Icon -->
-      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
     </button>
   </nav>
 
   <div class="side-left fade-down">
-    <span class="scroll-text">SCROLL DOWN</span>
-    <div class="line"></div>
+    <div class="pagination">
+      <div class="page-dot active" data-target="hero"></div>
+      <div class="page-dot" data-target="skills"></div>
+      <div class="page-dot" data-target="work"></div>
+      <div class="page-dot" data-target="projects"></div>
+      <div class="page-dot" data-target="contact"></div>
+    </div>
+    <div class="scroll-down-container">
+      <span class="scroll-text">SCROLL DOWN</span>
+      <div class="line"></div>
+    </div>
   </div>
 
   <div class="side-right fade-down">
     <div class="social-links">
-      <a href="https://github.com/MilindJarsaniya21" target="_blank" rel="noopener noreferrer">GH</a>
-      <a href="https://linkedin.com/in/milind-jarsaniya" target="_blank" rel="noopener noreferrer">LI</a>
-      <a href="mailto:milindjarsaniya.dev@gmail.com">EM</a>
+      <a href="https://github.com/MilindJarsaniya21" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/milind-jarsaniya" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <a href="mailto:milindjarsaniya.dev@gmail.com" aria-label="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
     </div>
     <div class="line"></div>
   </div>
@@ -46,15 +97,56 @@
   <main class="container">
     <section id="hero" class="hero">
       <div class="hero-content reveal-up">
-        <h1>Hello,<br>My name is Milind.</h1>
-        <p>I am an ambitious Software Developer specializing in backend engineering, APIs, and event-driven architectures. I build scalable, reliable software using Java, Spring Boot, and Node.js.</p>
+        <h1>Milind's <span class="text-muted">Portfolio</span></h1>
+        <p>I engineer scalable backend systems and APIs. My focus is on delivering reliable, production-ready services
+          and robust database architectures using Java and Spring Boot.</p>
         <div class="hero-actions">
-          <a href="./resume.pdf" class="btn primary-link" target="_blank">Get My Resume <span class="arrow">→</span></a>
+          <a href="./assets/Milind_Jarsaniya_Resume.pdf" class="btn primary-link" target="_blank">Get My Resume <span class="arrow">→</span></a>
         </div>
       </div>
       <div class="hero-image reveal-up" style="transition-delay: 0.2s">
         <div class="image-wrapper">
-          <img src="/home/milindjarsaniya/.gemini/antigravity/brain/39ba09ff-8b0a-4706-9f5c-c2865d14a228/developer_portrait_1776262818416.png" alt="Milind Jarsaniya">
+          <img
+            src="./assets/Milind.jpg"
+            alt="Milind Jarsaniya">
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="section-header reveal-up">
+        <h2>Technical Skills</h2>
+        <p>The tools and technologies I use to architect and deploy backend systems.</p>
+      </div>
+
+      <div class="skills-grid reveal-up">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="tech-stack">
+            <span>Java</span><span>C/C++</span><span>JavaScript</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Frameworks</h3>
+          <div class="tech-stack">
+            <span>Spring Boot</span><span>Spring
+              MVC</span><span>Hibernate/JPA</span><span>Node.js</span><span>Express.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <div class="tech-stack">
+            <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3>Cloud & Tools</h3>
+          <div class="tech-stack">
+            <span>AWS (SNS, SQS, S3)</span><span>Docker</span><span>Git</span><span>Postman</span>
+          </div>
         </div>
       </div>
     </section>
@@ -69,22 +161,30 @@
           <div class="timeline-date">Jan 2025 - Present</div>
           <div class="timeline-content">
             <h3>Azilen Technologies</h3>
+
             <div class="role mt">
               <h4>Associate Software Developer</h4>
               <span class="duration">Jul 2025 - Present</span>
             </div>
             <ul>
-              <li>Engineered payment processing modules on the ACI Postilion platform (Java 8), handling ISO 8583 message parsing.</li>
-              <li>Reduced debugging turnaround by introducing structured field-level logging.</li>
-              <li>Designed RESTful API endpoints for timesheet tracking & resource allocation (Java, Spring Boot, PostgreSQL).</li>
+              <li><strong>Postilion Payment Processing:</strong> Engineered payment modules on ACI Postilion (Java 8),
+                implementing ISO 8583 message parsing flows.</li>
+              <li><strong>Timesheet & Resource Management:</strong> Designed 15+ RESTful APIs using Spring Boot and
+                PostgreSQL. Executed cross-schema database migrations and refactored the code.</li>
+              <li><strong>COMS (Cost & Management System):</strong> Developed backend modules for client onboarding and
+                project
+                allocation, consistently delivering features within Agile sprint deadlines.</li>
             </ul>
+
             <div class="role mt">
               <h4>Associate Software Developer Intern</h4>
               <span class="duration">Jan 2025 - Jun 2025</span>
             </div>
             <ul>
-              <li>Migrated a timesheet system from a frontend-heavy architecture to a Java/Spring Boot microservice.</li>
-              <li>Architected a Change Data Capture (CDC) pipeline across 3 databases using AWS SNS and SQS.</li>
+              <li>Architected a Change Data Capture (CDC) pipeline across 3 databases using AWS SNS and SQS for
+                near-real-time data synchronization.</li>
+              <li>Migrated a Nest.js timesheet system to a clean Java/Spring Boot microservice
+                architecture.</li>
             </ul>
           </div>
         </div>
@@ -96,43 +196,90 @@
         <h2>Selected Projects</h2>
         <p>Things I've built to solve complex problems.</p>
       </div>
-      
+
       <div class="projects-grid">
         <article class="project-card reveal-up">
           <div class="project-content">
             <h3>Multi-Library Management System</h3>
-            <p>Built a multi-tenant Library Management System with full CRUD operations for books, issuances, authors, and users across multiple libraries. Designed relational schema in MySQL.</p>
+            <p>Built a multi-tenant Library Management System with full CRUD operations for books, issuances, authors,
+              and users across multiple libraries. Designed relational schema in MySQL.</p>
             <div class="tech-stack">
               <span>Node.js</span><span>Express.js</span><span>MySQL</span><span>REST API</span>
             </div>
-            <a href="https://github.com/MilindJarsaniya21" class="btn outline" target="_blank" rel="noopener noreferrer">View Project</a>
+            <a href="https://github.com/MilindJarsaniya21/Library-Management-System" class="btn outline" target="_blank"
+              rel="noopener noreferrer">View Project</a>
           </div>
         </article>
-        
+
         <article class="project-card reveal-up" style="transition-delay: 0.2s">
           <div class="project-content">
             <h3>Streaming Service Platform</h3>
-            <p>Engineered a Netflix-inspired backend featuring user/admin management, tiered subscription plans, video upload handling, and JWT-based authentication with role-based access control.</p>
+            <p>Engineered a Netflix-inspired backend featuring user/admin management, tiered subscription plans, video
+              upload handling, and JWT-based authentication with role-based access control.</p>
             <div class="tech-stack">
               <span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span>
             </div>
-            <a href="https://github.com/MilindJarsaniya21" class="btn outline" target="_blank" rel="noopener noreferrer">View Project</a>
+            <a href="https://github.com/MilindJarsaniya21/NETFLIX" class="btn outline" target="_blank"
+              rel="noopener noreferrer">View Project</a>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="contact reveal-up">
-      <h2 class="huge">Contact!</h2>
-      <a href="mailto:milindjarsaniya.dev@gmail.com" class="contact-email">milindjarsaniya.dev@gmail.com <span class="arrow">↗</span></a>
-      
-      <div class="footer-bottom">
-        <div class="footer-socials">
-          <a href="https://github.com/MilindJarsaniya21" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/milind-jarsaniya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <section id="contact" class="contact-clean reveal-up">
+      <div class="contact-content">
+        <h2 class="contact-heading">Let's
+          <span class="text-slider">
+            <span class="word">grow</span>
+            <span class="word">work</span>
+            <span class="word">explore</span>
+          </span><br>
+          <span class="text-muted">together.</span>
+        </h2>
+        <p class="contact-subheading">I'm currently available for new opportunities. Feel free to reach out to discuss
+          collaborations or just to say hi.</p>
+
+        <div class="contact-info-grid">
+          <div class="info-card">
+            <span class="label">Email</span>
+            <a href="mailto:milindjarsaniya.dev@gmail.com" class="link">milindjarsaniya.dev@gmail.com <span
+                class="arrow">↗</span></a>
+          </div>
+          <div class="info-card right">
+            <span class="label">Socials</span>
+            <div class="social-circles">
+              <a href="https://linkedin.com/in/milind-jarsaniya" target="_blank" class="circle-icon"
+                aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <a href="https://github.com/MilindJarsaniya21" target="_blank" class="circle-icon" aria-label="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="copyright">
-          © <span id="year"></span> Milind Jarsaniya. All rights reserved. Built with precision.
+      </div>
+
+      <div class="contact-footer-clean">
+        <hr class="contact-divider">
+        <div class="footer-row">
+          <div class="contact-nav">
+            <a href="#top">Home</a>
+            <a href="#work">Work</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="copyright-info">
+            <span>Based in India</span>
+            <span class="dot-separator">•</span>
+            <span>© <span id="year"></span> Milind Jarsaniya. All rights reserved.</span>
+          </div>
         </div>
       </div>
     </section>
@@ -141,4 +288,5 @@
   <div class="cursor-dot"></div>
   <div class="cursor-outline"></div>
 </body>
+
 </html>

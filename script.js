@@ -83,20 +83,48 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
+
+    const pageDots = document.querySelectorAll('.page-dot');
+    pageDots.forEach(dot => {
+        dot.classList.remove('active');
+        if (dot.getAttribute('data-target') === current) {
+            dot.classList.add('active');
+        }
+    });
+
+    const scrollContainer = document.querySelector('.scroll-down-container');
+    if (scrollContainer) {
+        if (window.scrollY > 100) {
+            scrollContainer.classList.add('hidden');
+        } else {
+            scrollContainer.classList.remove('hidden');
+        }
+    }
+});
+
+const pageDotsClickable = document.querySelectorAll('.page-dot');
+pageDotsClickable.forEach(dot => {
+    dot.addEventListener('click', () => {
+        const targetId = dot.getAttribute('data-target');
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
 });
 
 // Custom Cursor
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorOutline = document.querySelector('.cursor-outline');
 
-if(cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
+if (cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
     window.addEventListener('mousemove', (e) => {
         const posX = e.clientX;
         const posY = e.clientY;
-        
+
         cursorDot.style.left = `${posX}px`;
         cursorDot.style.top = `${posY}px`;
-        
+
         cursorOutline.animate({
             left: `${posX}px`,
             top: `${posY}px`
@@ -111,8 +139,8 @@ if(cursorDot && cursorOutline && window.matchMedia("(pointer: fine)").matches) {
     });
 } else {
     // Hide cursors on touch devices
-    if(cursorDot) cursorDot.style.display = 'none';
-    if(cursorOutline) cursorOutline.style.display = 'none';
+    if (cursorDot) cursorDot.style.display = 'none';
+    if (cursorOutline) cursorOutline.style.display = 'none';
 }
 
 // Dynamic Year
